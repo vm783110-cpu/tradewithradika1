@@ -3,10 +3,68 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
 <title>Radhika Trader</title>
 
-<!-- Meta Pixel Code -->
+<style>
+
+body{
+font-family:Arial;
+background:#f4f4f4;
+display:flex;
+justify-content:center;
+align-items:center;
+height:100vh;
+}
+
+.card{
+background:white;
+width:350px;
+padding:20px;
+border-radius:15px;
+text-align:center;
+box-shadow:0 0 10px rgba(0,0,0,0.1);
+}
+
+.topbtn{
+background:#f6a623;
+padding:12px;
+border-radius:8px;
+color:white;
+font-weight:bold;
+margin-bottom:15px;
+}
+
+.profile{
+width:100px;
+height:100px;
+border-radius:50%;
+border:4px solid #f6a623;
+margin:auto;
+}
+
+.box{
+background:#f7efe2;
+padding:10px;
+margin:8px 0;
+border-radius:8px;
+font-weight:600;
+}
+
+.joinbtn{
+background:#f6a623;
+color:white;
+border:none;
+padding:14px;
+width:100%;
+border-radius:8px;
+font-size:16px;
+font-weight:bold;
+cursor:pointer;
+}
+
+</style>
+
+<!-- Meta Pixel -->
 <script>
 !function(f,b,e,v,n,t,s)
 {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
@@ -17,19 +75,16 @@ t.src=v;s=b.getElementsByTagName(e)[0];
 s.parentNode.insertBefore(t,s)}(window, document,'script',
 'https://connect.facebook.net/en_US/fbevents.js');
 
-fbq('init', '929115029815518');
+fbq('init','929115029815518');
+fbq('track','PageView');
 
-fbq('track', 'PageView');
-
-function joinTelegram(){
+function joinTG(){
 
 fbq('track','Lead');
 
 setTimeout(function(){
-
 window.location.href="https://t.me/+-xFgvFRuRQxiYWZl";
-
-},800);
+},500);
 
 }
 
@@ -37,29 +92,31 @@ window.location.href="https://t.me/+-xFgvFRuRQxiYWZl";
 
 </head>
 
-<body style="font-family:sans-serif;background:#f4f4f4;text-align:center">
+<body>
 
-<div style="max-width:420px;margin:auto;background:white;padding:20px;border-radius:10px">
+<div class="card">
+
+<div class="topbtn">టెలిగ్రామ్ ఛానెల్ జాయిన్</div>
+
+<img src="https://i.imgur.com/4ZQZ4Z8.png" class="profile">
 
 <h2>👑 Radhika Trader 👑</h2>
 
-<p>✅ 95% Accurate Trading Signals</p>
-<p>📈 Daily Profit Signals</p>
-<p>📊 Intraday Option Trading</p>
-<p>🏆 14 Years Experience</p>
+<p>⚡ 95% హై అక్యూరసీ ట్రేడింగ్ సిగ్నల్స్</p>
+
+<div class="box">📚 కొత్త ట్రేడింగ్ స్కిల్స్ నేర్చుకోండి</div>
+
+<div class="box">💎 రోజువారీ ప్రాఫిట్ గ్యారంటీ</div>
+
+<div class="box">📊 ఇంట్రాడే ఆప్షన్ ట్రేడింగ్</div>
+
+<div class="box">🏆 షేర్ మార్కెట్‌లో 14 సంవత్సరాల అనుభవం</div>
 
 <br>
 
-<button onclick="joinTelegram()" 
-style="background:#f4a300;color:white;padding:15px 30px;border:none;font-size:18px;border-radius:6px;cursor:pointer">
-
-TELEGRAM CHANNEL JOIN
-
+<button class="joinbtn" onclick="joinTG()">
+టెలిగ్రామ్ ఛానెల్ జాయిన్
 </button>
-
-<br><br>
-
-<p>🔥 Free Trading Signals Telugu 🔥</p>
 
 </div>
 
